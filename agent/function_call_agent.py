@@ -1,7 +1,6 @@
 from openai import OpenAI
 import json
 from typing import List, Dict, Any
-import base64
 
 class SimpleAgent:
     def __init__(self, name="AI Assistant", system_prompt=None):
@@ -16,38 +15,22 @@ class SimpleAgent:
             "get_current_weather": self.get_current_weather,
             "calculate": self.calculate,
         }
-        self.available_functions.update({
-            "image_to_vue": self.image_to_vue,
-        })
+        
+    def get_current_weather(self, location: str, unit: str = "celsius") -> str:
+        """获取指定位置的当前天气"""
+        # 这里是模拟实现，实际应用中需要接入天气 API
+        return f"模拟天气数据：{location} 的温度是 20 {unit}"
     
-    def image_to_vue(self, image_path: str, component_name: str = "GeneratedComponent") -> str:
-        """将图片转换为 Vue 组件"""
+    def calculate(self, expression: str) -> str:
+        """计算数学表达式"""
         try:
-            # 读取图片并转换为 base64
-            with open(image_path, "rb") as image_file:
-                image_data = base64.b64encode(image_file.read()).decode('utf-8')
-            
-            # 调用 Vision API 分析图片
-            vision_response = self.client.chat.completions.create(
-                model="deepseek-chat",
-                messages=[
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "text", "text": "请分析这张图片并生成对应的 Vue 3 组件代码，使用 Composition API"},
-                            {
-                                "type": "image_url",
-                                "image_url": f"data:image/jpeg;base64,{image_data}"
-                            }
-                        ]
-                    }
-                ]
-            )
-            return vision_response.choices[0].message.content
+            result = eval(expression)
+            return f"计算结果：{result}"
         except Exception as e:
-            return f"图片转换错误：{str(e)}"
+            return f"计算错误：{str(e)}"
 
     def get_functions_config(self) -> List[Dict[str, Any]]:
+        """获取函数配置"""
         return [
             {
                 "name": "get_current_weather",
@@ -80,24 +63,6 @@ class SimpleAgent:
                         }
                     },
                     "required": ["expression"]
-                }
-            },
-            {
-                "name": "image_to_vue",
-                "description": "将图片转换为 Vue 组件代码",
-                "parameters": {
-                    "type": "object",
-                    "properties": {
-                        "image_path": {
-                            "type": "string",
-                            "description": "图片文件的路径"
-                        },
-                        "component_name": {
-                            "type": "string",
-                            "description": "生成的 Vue 组件名称"
-                        }
-                    },
-                    "required": ["image_path"]
                 }
             }
         ]
