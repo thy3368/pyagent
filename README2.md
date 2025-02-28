@@ -8,7 +8,7 @@
   电子商务系统包含用户、商品和订单三个主要实体。用户有ID、姓名、邮箱和地址等属性。商品包含ID、名称、价格、库存和描述。订单包含ID、创建时间、状态、总价，并与用户和商品关联。"
   --output /Users/hongyaotang/src/py/pyagent/output/ecommerce.hddml --json
 
-- case2:生成业务动作 api
+- case2:生成业务动作 role+action api
 
 - case3:生成业务界面 webui
 
