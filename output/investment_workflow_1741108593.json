@@ -1,0 +1,299 @@
+[
+  {
+    "timestamp": "2025-03-05 01:16:24",
+    "symbol": "AAPL",
+    "risk_preference": 3,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "35.00%",
+      "stop_loss": "12.00%",
+      "take_profit": "16.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "AAPL",
+      "size": 117,
+      "price": 2988.7111862489382,
+      "value": 349679.2087911258,
+      "commission": 349.6792087911258,
+      "portfolio": {
+        "cash": 649971.1120000831,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-05 01:16:25",
+    "symbol": "AAPL",
+    "risk_preference": 5,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "45.00%",
+      "stop_loss": "10.00%",
+      "take_profit": "20.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "AAPL",
+      "size": 33,
+      "price": 2988.7111862489382,
+      "value": 98627.46914621496,
+      "commission": 98.62746914621496,
+      "portfolio": {
+        "cash": 551245.0153847219,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-05 01:16:26",
+    "symbol": "AAPL",
+    "risk_preference": 7,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "55.00%",
+      "stop_loss": "8.00%",
+      "take_profit": "24.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "AAPL",
+      "size": 33,
+      "price": 2988.7111862489382,
+      "value": 98627.46914621496,
+      "commission": 98.62746914621496,
+      "portfolio": {
+        "cash": 452518.91876936075,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-05 01:16:27",
+    "symbol": "GOOGL",
+    "risk_preference": 3,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "35.00%",
+      "stop_loss": "12.00%",
+      "take_profit": "16.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "GOOGL",
+      "size": 52,
+      "price": 2988.7111862489382,
+      "value": 155412.9816849448,
+      "commission": 155.4129816849448,
+      "portfolio": {
+        "cash": 296950.524102731,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-05 01:16:28",
+    "symbol": "GOOGL",
+    "risk_preference": 5,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "45.00%",
+      "stop_loss": "10.00%",
+      "take_profit": "20.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "GOOGL",
+      "size": 16,
+      "price": 2988.7111862489382,
+      "value": 47819.37897998301,
+      "commission": 47.819378979983014,
+      "portfolio": {
+        "cash": 249083.32574376801,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-05 01:16:29",
+    "symbol": "GOOGL",
+    "risk_preference": 7,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "55.00%",
+      "stop_loss": "8.00%",
+      "take_profit": "24.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "GOOGL",
+      "size": 15,
+      "price": 2988.7111862489382,
+      "value": 44830.66779373407,
+      "commission": 44.83066779373407,
+      "portfolio": {
+        "cash": 204207.8272822402,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-05 01:16:30",
+    "symbol": "MSFT",
+    "risk_preference": 3,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "35.00%",
+      "stop_loss": "12.00%",
+      "take_profit": "16.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "MSFT",
+      "size": 23,
+      "price": 2988.7111862489382,
+      "value": 68740.35728372558,
+      "commission": 68.74035728372557,
+      "portfolio": {
+        "cash": 135398.7296412309,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-05 01:16:31",
+    "symbol": "MSFT",
+    "risk_preference": 5,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "45.00%",
+      "stop_loss": "10.00%",
+      "take_profit": "20.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "MSFT",
+      "size": 7,
+      "price": 2988.7111862489382,
+      "value": 20920.978303742566,
+      "commission": 20.920978303742565,
+      "portfolio": {
+        "cash": 114456.83035918459,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-05 01:16:32",
+    "symbol": "MSFT",
+    "risk_preference": 7,
+    "market_state": {
+      "trend": "\u4e0a\u6da8",
+      "volatility": "19.42%",
+      "sentiment": "14.32",
+      "risk_level": 10
+    },
+    "strategy": {
+      "position_size": "55.00%",
+      "stop_loss": "8.00%",
+      "take_profit": "24.00%"
+    },
+    "trade_result": {
+      "success": true,
+      "action": "buy",
+      "symbol": "MSFT",
+      "size": 7,
+      "price": 2988.7111862489382,
+      "value": 20920.978303742566,
+      "commission": 20.920978303742565,
+      "portfolio": {
+        "cash": 93514.93107713829,
+        "positions": {
+          "AAPL": 183,
+          "GOOGL": 83,
+          "MSFT": 37
+        }
+      }
+    }
+  }
+]
