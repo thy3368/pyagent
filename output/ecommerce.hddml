@@ -1,0 +1,25 @@
+<hddml version="1.0">
+  <entity name="User">
+    <attribute name="id" type="integer" primary="true"/>
+    <attribute name="name" type="string" length="100"/>
+    <attribute name="email" type="string" length="255"/>
+    <attribute name="address" type="string" length="255"/>
+    <relationship name="orders" type="one-to-many" target="Order"/>
+  </entity>
+  <entity name="Product">
+    <attribute name="id" type="integer" primary="true"/>
+    <attribute name="name" type="string" length="100"/>
+    <attribute name="price" type="decimal" precision="10" scale="2"/>
+    <attribute name="stock" type="integer"/>
+    <attribute name="description" type="string" length="500"/>
+    <relationship name="orders" type="one-to-many" target="Order"/>
+  </entity>
+  <entity name="Order">
+    <attribute name="id" type="integer" primary="true"/>
+    <attribute name="created_at" type="datetime"/>
+    <attribute name="status" type="string" length="50"/>
+    <attribute name="total_price" type="decimal" precision="10" scale="2"/>
+    <relationship name="user" type="many-to-one" target="User"/>
+    <relationship name="products" type="many-to-many" target="Product"/>
+  </entity>
+</hddml>

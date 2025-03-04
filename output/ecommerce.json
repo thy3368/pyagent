@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "address": {
+          "type": "string",
+          "maxLength": 255
+        }
+      },
+      "required": []
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "price": {
+          "type": "string"
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 500
+        }
+      },
+      "required": []
+    },
+    "Order": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "total_price": {
+          "type": "string"
+        }
+      },
+      "required": []
+    }
+  }
+}
